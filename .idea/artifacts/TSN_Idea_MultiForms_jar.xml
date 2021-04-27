@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TSN_Idea_MultiForms:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TSN_Idea_MultiForms_jar</output-path>
+    <root id="archive" name="TSN_Idea_MultiForms.jar">
+      <element id="module-output" name="TSN_Idea_MultiForms" />
+    </root>
+  </artifact>
+</component>
