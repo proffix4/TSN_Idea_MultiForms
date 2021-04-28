@@ -40,8 +40,6 @@ public class Form1 extends JFrame {
             }
 
             Main.form1.setVisible(false); // Скрываем форму 1
-
-            Main.form2 = new Form2(); // Создаем в памяти форму 2
             Main.form2.setVisible(true); // Делаем видимой форму 2
         });
 
