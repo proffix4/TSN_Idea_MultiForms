@@ -14,6 +14,7 @@ public class Form1 extends JFrame {
     public Form1() {
         // Инициализация компонент
         getContentPane().add(panel1);
+        setResizable(false);
         setIconImage(Toolkit.getDefaultToolkit().createImage(getClass().getResource("icon.png")));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Многооконная программа");

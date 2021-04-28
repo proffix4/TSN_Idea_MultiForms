@@ -2,6 +2,8 @@ package kz.talipovsn.ij.multiforms;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 // Форма 2
 public class Form2 extends JFrame {
@@ -13,6 +15,7 @@ public class Form2 extends JFrame {
     public Form2() {
         // Инициализация компонент
         getContentPane().add(panel2);
+        setResizable(false);
         setIconImage(Toolkit.getDefaultToolkit().createImage(getClass().getResource("icon.png")));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Многооконная программа");
