@@ -33,7 +33,7 @@ public class Form1 extends JFrame {
             if (!s1.equals("")) {
                 Main.data.append(s1);
                 if (!s2.equals("")) {
-                    Main.data.append(", номер: "+s2);
+                    Main.data.append(", номер: ").append(s2);
                 }
             } else {
                 Main.data.append("???");
