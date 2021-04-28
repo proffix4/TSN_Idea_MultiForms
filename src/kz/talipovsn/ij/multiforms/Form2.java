@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
 
 // Форма 2
 public class Form2 extends JFrame {
@@ -22,9 +23,6 @@ public class Form2 extends JFrame {
         pack();
         setLocationRelativeTo(null);
 
-        // Устанавливаем данные с общей переменной
-        label_Data.setText(Main.data.toString());
-
         // Кнопка "Назад"
         priorButton.addActionListener(actionEvent -> {
             Main.form2.setVisible(false); // Скрываем форму 2
@@ -33,5 +31,16 @@ public class Form2 extends JFrame {
 
         // Кнопка "Выход"
         exitButton.addActionListener(actionEvent -> System.exit(0));
+
+        // Переопределяем нужные нам обработчики событий для окна
+        addWindowListener(new WindowAdapter() {
+            // Открытие окна
+            @Override
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                // Устанавливаем данные из общей переменной
+                label_Data.setText(Main.data.toString());
+            }
+        });
     }
+
 }
